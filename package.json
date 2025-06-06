@@ -1,0 +1,43 @@
+{
+  "name": "cartesia-theme",
+  "version": "1.0.0",
+  "description": "A minimalistic WordPress theme replicating Cartesia.ai design",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "test": "jest",
+    "test:e2e": "playwright test",
+    "lint": "eslint assets/js/**/*.js",
+    "format": "prettier --write \"**/*.{js,jsx,css,md}\""
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "cartesia",
+    "react",
+    "gsap"
+  ],
+  "author": "Sayam",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "@playwright/test": "^1.35.0",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.42.0",
+    "eslint-plugin-react": "^7.32.2",
+    "jest": "^29.5.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "prettier": "^2.8.8",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
